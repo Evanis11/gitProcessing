@@ -11,5 +11,13 @@ class Ball {
   void draw() {
     ellipse(x, y, 50, 50);
   }
+
+  void move() {
+    x=x+vx;
+    y=y+vy;
+    if (y>height) {
+      vy=-abs(vy);
+    }
+  }
 }
 
